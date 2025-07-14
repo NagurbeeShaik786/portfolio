@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0e860960b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+        <div class="nav-header">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Computer science student</p>
+            <h1>Hi, I'm <span>Nagurbee</span><br>Shaik</h1>
+            <p class="home__description">
+                A second-year undergraduate engineering student at<br>
+                <strong>NRI Institute of Technology</strong>, Agiripalli.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm Nagurbee, a 2<sup>nd</sup> year computer science student at the 
+                    <a href="https://nriit.edu.in/" target="_blank" id="linkUniv">NRI Institute of Technology</a> 
+                    in Agiripalli, Vijayawada. I am passionate about leveraging AI and ML technologies to solve 
+                    real-world problems, enhance user experiences, and drive innovation. With a strong foundation 
+                    in programming, data analysis, and model development, I am continuously expanding my skills 
+                    in full-stack development, machine learning, and cybersecurity. My projects reflect my curiosity 
+                    and commitment to learning, and I am always eager to take on new challenges in the field of AI.
+                </p>
+                <div class="about__info">
+                    <div>
+                        <br><br>
+                        <span class="about__info-title">08.30+</span>
+                        <span class="about__info-name">Aggregate <br />CGPA</span>
+                    </div>
+                    <div>
+                        <br><br>
+                        <span class="about__info-title">04+</span>
+                        <span class="about__info-name">Projects</span>
+                    </div>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Competitive Programming</span><br>Improving my problem-solving skills</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>No significant experience for the moment</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="qualification__container container grid services__container">
+                        <div class="qualification__tabs">
+                            <div class="qualification__button button--flex qualification__active" data-target="#education">
+                                <i class="uil uil-graduation-cap qualification__icon"></i>
+                                Education
+                            </div>
+                        </div>
+                        <div class="qualification__sections">
+                            <!-- Qualification Content 1 -->
+                            <div class="qualification__content qualifiation__active services__content" data-content id="education">
+                                <!-- Qualification 1 -->
+                                <div class="qualification__data">
+                                    <div>
+                                        <h3 class="qualification__title">SSLC</h3>
+                                        <span class="qualification__subtitle">Ravindra Bharathi <br />High School</span>
+                                        <div class="qualification__calender">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            - 2021
+                                        </div>
+                                        <span class="button button--flex button--small button--link services__button">
+                                            View More
+                                            <i class="uil uil-arrow-right button__icon"></i>
+                                        </span>
+                                        <div class="services__modal">
+                                            <div class="services__modal-content">
+                                                <h4 class="services__modal-title">Class 10th Summary:</h4>
+                                                <i class="uil uil-times services__modal-close"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+                                </div>
+                                <!-- Qualification 2 -->
+                                <div class="qualification__data">
+                                    <div></div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                        <span class="qualification__line"></span>
+                                    </div>
+                                    <div>
+                                        <h3 class="qualification__title">Class 12th</h3>
+                                        <span class="qualification__subtitle">Sri Chaitanya <br />College</span>
+                                        <div class="qualification__calender">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            - 2023
+                                        </div>
+                                        <span class="button button--flex button--small button--link services__button">
+                                            View More
+                                            <i class="uil uil-arrow-right button__icon"></i>
+                                        </span>
+                                        <div class="services__modal">
+                                            <div class="services__modal-content">
+                                                <h4 class="services__modal-title">Class 12th Summary:</h4>
+                                                <i class="uil uil-times services__modal-close"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Qualification 3 -->
+                                <div class="qualification__data">
+                                    <div>
+                                        <h3 class="qualification__title">College</h3>
+                                        <span class="qualification__subtitle">NRI Institution of Technology, Agiripalli</span>
+                                        <div class="qualification__calender">
+                                            <i class="uil uil-calendar-alt"></i>
+                                            2023 - 2027
+                                        </div>
+                                        <span class="button button--flex button--small button--link services__button">
+                                            View More
+                                            <i class="uil uil-arrow-right button__icon"></i>
+                                        </span>
+                                        <div class="services__modal"></div>
+                                    </div>
+                                    <div>
+                                        <span class="qualification__rounder"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ------services-------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Experienced in HTML ,CSS and javascript titled with a freecodecamp certifcation in responsive web
+                        design.</p>
+                    <a href="https://www.freecodecamp.org/certification/fcc54213221-f536-45e5-8746-45e59b54f7e8/responsive-web-design"
+                        target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Desing</h2>
+                    <p>Small experience in Kotlin and android studio.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------portfolio------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping app</h3>
+
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/NagurbeeShaik786?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------------contact------------------------ -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+          <h3 id="co-title">Contact Me</h3>
+          <h1 id="co-text">Reach out for a new project or to say hello</h1>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-form">
+            <h3 id="form-title">Send me a message</h3>
+            <form method="post" action="mailtrap_form_handler.php">
+                <fieldset>
+                    <div class="form-field">
+                        <input name="name" type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-field">
+                        <input name="email" type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-field">
+                        <input name="subject" type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                </fieldset>
+                <input id="form-btn" type="submit" value="Send">
+            </form>
+            
+      </div>
+        
+          <div class="contact-info">
+            <h3>Cantact Me</h3>
+            <a href="mailto:ks8897820@gmail.com"><p>ks8897820@gmail.com</p></a>
+            <h3>Find Me On </h3>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/profile.php?id=61572962856786" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/nagurbee-shaik-0489aa2b9/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=qt47qhh" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/NagurbeeShaik786?tab=repositories" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+                    </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+          </div>
+          </div>
+      </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+
+</html>
